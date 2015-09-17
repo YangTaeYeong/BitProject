@@ -45,7 +45,7 @@ public class RecommendListActivity extends AppCompatActivity {
     private String output = null;
     // contacts JSONArray
     JSONArray contacts = null;
-
+    //aa
     // Hashmap for ListView
     ArrayList<HashMap<String, String>> contactList;
 
