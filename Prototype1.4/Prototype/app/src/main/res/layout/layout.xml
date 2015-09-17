@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 결과 목록 -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    >
+    <TextView
+        android:id="@+id/result_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="검색결과"
+        android:textColor="#000000"
+        android:textSize="12pt"
+        android:paddingLeft="8px"
+        android:paddingTop="10px"
+        />
+    <TextView
+        android:id="@+id/result_count"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="result_count"
+        android:textColor="#000000"
+        android:textSize="8pt"
+        android:paddingLeft="8px"
+        android:paddingBottom="4px"
+        android:layout_below="@id/result_title"
+        />
+    <TextView
+        android:id="@+id/result_page"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="page num"
+        android:textColor="#000000"
+        android:textSize="8pt"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8px"
+        />
+    <ListView
+        android:id="@+id/result_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="8px"
+        android:layout_marginRight="8px"
+        android:fadingEdge="none"
+        android:smoothScrollbar="true"
+        android:fadeScrollbars="true"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        android:layout_below="@id/result_count"
+        android:layout_above="@id/result_page"
+        android:focusable="true"
+        android:clickable="true"
+        />
+</RelativeLayout>

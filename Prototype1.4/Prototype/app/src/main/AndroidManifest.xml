@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.myapplication" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+<!-- ! -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MusicListActivity"
+            android:label="@string/title_activity_music_list" >
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".MainActivity_demo"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".MainRecordActivity"
+            android:label="@string/title_activity_main_record" >
+        </activity>
+        <activity
+            android:name=".RecommendListActivity"
+            android:label="@string/title_activity_recommend_list" >
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name=".RecordingResultActivity"
+            android:label="@string/title_activity_recording_result" >
+        </activity>
+        <activity
+            android:name=".SongRecoringActivity"
+            android:label="@string/title_activity_song_recoring" >
+        </activity>
+        <activity
+            android:name=".Ex_ActionBar"
+            android:label="@string/title_activity_ex__action_bar" >
+        </activity>
+    </application>
+
+</manifest>
