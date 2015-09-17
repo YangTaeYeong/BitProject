@@ -2,20 +2,26 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_height="50dp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button"
+            android:layout_gravity="center_vertical" />
 
         <com.androidplot.xy.XYPlot
             android:id="@+id/mySimpleXYPlot"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="200dp"
             androidPlot.title="A Simple XY Plot"
             androidPlot.domainLabel="Domain"
             androidPlot.rangeLabel="Range"
@@ -36,21 +42,7 @@
             androidPlot.legendWidget.heightMetric.value="25dp"
             androidPlot.legendWidget.positionMetrics.anchor="right_bottom"
             androidPlot.graphWidget.gridLinePaint.color="#FFFFFF"
-            android:layout_weight="1"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button"
-            android:layout_gravity="center_vertical" />
+            android:layout_weight="0.62"/>
     </LinearLayout>
 
 </LinearLayout>
